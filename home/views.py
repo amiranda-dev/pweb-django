@@ -4,7 +4,7 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h1>Página Principal</h1>')
+    return HttpResponse('<h1>Página Principal</h1><br><hr><h2>Alisson Miranda<h2>')
 
 def sobre(request):
     return HttpResponse('<h1>Sobre o Sistema Django!</h1>')
