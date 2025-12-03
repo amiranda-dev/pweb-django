@@ -4,13 +4,13 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h1>Página Principal</h1><br><hr><h2>Alisson Miranda<h2>')
+    return render(request, 'index.html')
 
 def sobre(request):
-    return HttpResponse('<h1>Sobre o Sistema Django!</h1>')
+    return render(request, 'sobre.html')
 
 def contato(request):
-    return HttpResponse('<h1>Contato</h1>')
+    return render(request, 'contato.html')
 
 def ajuda(request):
-    return HttpResponse('<h1>Ajuda</h1>')
+    return render(request, 'ajuda.html')
