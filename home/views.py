@@ -14,3 +14,6 @@ def contato(request):
 
 def ajuda(request):
     return render(request, 'ajuda.html')
+
+def exibir_item(resquest, id):
+    return render(resquest, "exibir_item.html", {'id':id})
