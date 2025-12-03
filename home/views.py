@@ -32,6 +32,6 @@ def dia_semana(request, numero):
         7: "Domingo"
     }
     
-    dia = dias.get(numero, "Dia inválido)")
+    dia = dias.get(numero, "Dia inválido")
     
     return render(request, "dia.html", {"dia":dia})
