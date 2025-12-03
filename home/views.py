@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from urllib.parse import unquote
 
 # Create your views here.
 
@@ -19,6 +20,7 @@ def exibir_item(resquest, id):
     return render(resquest, "exibir_item.html", {'id':id})
 
 def perfil(request, usuario):
+    usuario = unquote(usuario)
     return render(request, "perfil.html", {'usuario':usuario})
 
 def dia_semana(request, numero):
