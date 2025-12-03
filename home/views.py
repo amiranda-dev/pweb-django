@@ -17,3 +17,21 @@ def ajuda(request):
 
 def exibir_item(resquest, id):
     return render(resquest, "exibir_item.html", {'id':id})
+
+def perfil(request, usuario):
+    return render(request, "perfil.html", {'usuario':usuario})
+
+def dia_semana(request, numero):
+    dias = {
+        1: "Segunda-feira",
+        2: "Terça-feira",
+        3: "Quarta-feira",
+        4: "Quinta-feira",
+        5: "Sexta-feira",
+        6: "Sábado",
+        7: "Domingo"
+    }
+    
+    dia = dias.get(numero, "Número inválido (1-7)")
+    
+    return render(request, "dia.html", {"dia":dia})
