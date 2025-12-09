@@ -11,7 +11,7 @@ urlpatterns = [
     path('item/<int:id>', views.exibir_item, name="exibir_item"),
     path('perfil/<str:usuario>', views.perfil, name="perfil"),
     path('diasemana/<int:numero>', views.dia_semana, name="diasemana"),
-    path('produto/', views.produto, name='produto')
+    path('produtos/', views.produtos, name='produtos')
 
             
 ]
