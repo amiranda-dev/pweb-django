@@ -37,3 +37,7 @@ def dia_semana(request, numero):
     dia = dias.get(numero, "Dia inválido")
     
     return render(request, "dia.html", {"dia":dia})
+
+
+def produto(request):
+    return HttpResponse("Página de produtos")
